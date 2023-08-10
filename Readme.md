@@ -11,7 +11,7 @@
 To install `yaml-db`, you can use npm:
 
 ```bash
-npm install -g yaml-db
+npm i -g @ruslankonev/yaml-db
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ yaml-db start
 
 ### Options
 
-- `-c, --config <path>`: Path to configuration file (default: `./config.yaml`)
+- `-c, --config [path]`: Path to configuration file
 - `-d, --dir [directory]`: File storage path (default: `./data`)
 - `-p, --port [port]`: The port on which the server is raised (default: `5701`)
 
