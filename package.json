@@ -1,5 +1,5 @@
 {
-  "name": "yaml-db",
+  "name": "@ruslankonev/yaml-db",
   "version": "1.0.0",
   "description": "YAML-based database with the ability to run as a service",
   "bin": {
