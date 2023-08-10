@@ -1,0 +1,5 @@
+server:
+  port: 5701
+
+database:
+  dataPath: ./data/records
