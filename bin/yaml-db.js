@@ -11,10 +11,10 @@ const { getConfig } = require('../lib/utils')
 const app = express()
 app.use(bodyParser.json())
 
-program.version('1.0.0')
+program.version(require('../package.json').version)
 
 program
-  .option('-c, --config <path>', 'Path to configuration file', './config.yaml')
+  .option('-c, --config [path]', 'Path to configuration file')
   .option('-d, --dir [directory]', 'File storage path', './data')
   .option('-p, --port [port]', 'The port on which the server is raised', 5701)
   .parse()

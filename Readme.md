@@ -50,7 +50,7 @@ In addition to running `yaml-db` as a standalone server, you can also use the `D
 First, you need to install the required dependencies in your project:
 
 ```bash
-npm install fs-extra yaml
+npm install yaml
 ```
 
 ### Example Usage
@@ -58,7 +58,7 @@ npm install fs-extra yaml
 To use the `Database` module in your project, you can require it and create an instance of the database:
 
 ```javascript
-const fs = require('fs-extra');
+const fs = require('fs');
 const { Database } = require('yaml-db');
 
 const dataPath = './data/records'; // Change this to the appropriate data path
@@ -102,7 +102,6 @@ For more detailed information about the available methods and their parameters, 
 - `updateRecord(recordId, updatedData)`: Update the data of a record.
 - `getRecordMeta(recordId)`: Retrieve the metadata of a record.
 - `getRecordData(recordId)`: Retrieve the data of a record.
-- `searchRecordsByDirectory(query)`: Search records by directory name.
 
 For more detailed documentation on each method, refer to the inline comments in the `/lib/database.js` file.
 
@@ -112,7 +111,6 @@ For more detailed documentation on each method, refer to the inline comments in 
 - `body-parser`: Middleware to parse request bodies.
 - `commander`: Command-line interface framework.
 - `express`: Web application framework for the server.
-- `fs-extra`: Extended file system utilities.
 - `lodash`: Utility library for working with data.
 - `multer`: Middleware for handling file uploads.
 - `nanoid`: Library for generating unique IDs.
