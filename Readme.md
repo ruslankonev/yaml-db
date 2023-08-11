@@ -4,9 +4,11 @@
 
 # yaml-db
 
-> ! Important !
+### Important 
 
 >  Currently, the project is still in development, not all methods have been fully implemented yet and the API is subject to change. If you have a suggestion for improvement or a good idea - you can make a pull-request.
+
+## 
 
 `yaml-db` is a simple YAML-based database with the ability to run as a service. It allows you to store data in the form of YAML files organized in folders. Each record is represented as a directory with `meta.yaml` and `data.yaml` files containing metadata and content.
 
