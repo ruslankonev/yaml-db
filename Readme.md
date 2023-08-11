@@ -4,6 +4,10 @@
 
 # yaml-db
 
+> ! Important !
+
+>  Currently, the project is still in development, not all methods have been fully implemented yet and the API is subject to change. If you have a suggestion for improvement or a good idea - you can make a pull-request.
+
 `yaml-db` is a simple YAML-based database with the ability to run as a service. It allows you to store data in the form of YAML files organized in folders. Each record is represented as a directory with `meta.yaml` and `data.yaml` files containing metadata and content.
 
 ## Installation
@@ -44,14 +48,6 @@ database:
 ## Programmatic Usage
 
 In addition to running `yaml-db` as a standalone server, you can also use the `Database` module programmatically in your Node.js projects. This allows you to interact with the database functionality directly within your application code.
-
-### Installation
-
-First, you need to install the required dependencies in your project:
-
-```bash
-npm install yaml
-```
 
 ### Example Usage
 
