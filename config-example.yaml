@@ -1,5 +1,6 @@
 server:
   port: 5701
+  allowedFrom: 0.0.0.0:8080
 
 database:
-  dataPath: ./data/records
+  dataPath: ./data

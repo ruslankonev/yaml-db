@@ -6,7 +6,7 @@
 
 ### Important 
 
->  Currently, the project is still in development, not all methods have been fully implemented yet and the API is subject to change. If you have a suggestion for improvement or a good idea - you can make a pull-request.
+>  Currently, the project is still in development, not all methods have been fully implemented yet and the API is subject to change. If you have a suggestion for improvement or a good idea – you can make a pull-request.
 
 ## 
 
@@ -33,6 +33,7 @@ yaml-db start
 - `-c, --config [path]`: Path to configuration file
 - `-d, --dir [directory]`: File storage path (default: `./data`)
 - `-p, --port [port]`: The port on which the server is raised (default: `5701`)
+- `-a, --allow [allow_from]`: Specify the CORS connection string (default: `*`)
 
 ## Configuration
 
@@ -41,6 +42,7 @@ You can provide a configuration file in YAML format to customize the database an
 ```yaml
 server:
   port: 5701 # The port on which the server is raised
+  allowedFrom: 0.0.0.0:8080 # Specify the CORS connection string
 
 database:
   dataPath: ./data # Path to the directory where data is stored
