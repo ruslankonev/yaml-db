@@ -2,6 +2,9 @@
 	<img src="./.github/yaml-db.svg" height="100" />
 </h1>
 
+[![npm version](https://img.shields.io/npm/v/%40ruslankonev%2Fyaml-db.svg)](https://www.npmjs.com/package/%40ruslankonev%2Fyaml-db)
+
+
 # yaml-db
 
 ### Important 
@@ -10,7 +13,7 @@
 
 ## 
 
-`yaml-db` is a simple YAML-based database with the ability to run as a service. It allows you to store data in the form of YAML files organized in folders. Each record is represented as a directory with `meta.yaml` and `data.yaml` files containing metadata and content.
+`yaml-db` is a simple YAML-based database with the ability to run as a service. It allows you to store data in the form of YAML files organized in folders. Each record is represented as a directory with `data.yaml` files containing metadata and content.
 
 ## Installation
 
@@ -77,10 +80,6 @@ db.init()
     // Update a record
     db.updateRecord(newRecordId, { title: 'Updated Record Title' });
 
-    // Retrieve record metadata
-    const recordMeta = db.getRecordMeta(newRecordId);
-    console.log('Record Metadata:', recordMeta);
-
     // Retrieve record data
     const recordData = db.getRecordData(newRecordId);
     console.log('Record Data:', recordData);
@@ -100,7 +99,6 @@ For more detailed information about the available methods and their parameters, 
 - `createRecord(recordData)`: Create a new record with the specified data.
 - `uploadFile(recordId, fileBuffer, filename)`: Upload a file to a record.
 - `updateRecord(recordId, updatedData)`: Update the data of a record.
-- `getRecordMeta(recordId)`: Retrieve the metadata of a record.
 - `getRecordData(recordId)`: Retrieve the data of a record.
 
 For more detailed documentation on each method, refer to the inline comments in the `/lib/database.js` file.
