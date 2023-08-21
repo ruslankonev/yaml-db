@@ -21,6 +21,7 @@
     }
   ],
   "main": "./lib/database.js",
+  "types": "./database.d.ts",
   "author": "Ruslan Konev <konev.lincor@gmail.com>",
   "license": "MIT",
   "dependencies": {
