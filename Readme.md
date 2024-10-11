@@ -62,7 +62,7 @@ To use the `Database` module in your project, you can require it and create an i
 
 ```javascript
 const fs = require('fs');
-const { Database } = require('yaml-db');
+const { Database } = require('@ruslankonev/yaml-db');
 
 const dataPath = './data/records'; // Change this to the appropriate data path
 const db = new Database(dataPath);
